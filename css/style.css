@@ -131,8 +131,10 @@ table {
 
 Type ref:
 ArnhemPro-NormalItalic
+ArnhemPro-BoldItalic
 ArnhemPro-BlackItalic
 ArnhemPro-Black
+ArnhemPro-Bold
 ArnhemPro-Normal
 */
 /* Utilities */
@@ -145,6 +147,16 @@ body {
   margin: 0;
   padding: 0;
   font: 18px/24px 'ArnhemPro-Normal', Georgia, Times, serif;
+}
+a {
+  -webkit-transition: all, ease, 0.2s;
+  -moz-transition: all, ease, 0.2s;
+  -o-transition: all, ease, 0.2s;
+  transition: all, ease, 0.2s;
+  text-decoration: none;
+}
+a:hover {
+  color: #666 !important;
 }
 #wrap nav {
   width: 100%;
@@ -173,20 +185,27 @@ body {
 }
 #wrap nav ul li a {
   text-decoration: none;
-  -webkit-transition: all, ease, 0.2s;
-  -moz-transition: all, ease, 0.2s;
-  -o-transition: all, ease, 0.2s;
-  transition: all, ease, 0.2s;
 }
 #wrap nav ul li a:hover {
   color: #666;
 }
+#wrap nav h1 {
+  font: 40px/40px 'ArnhemPro-Bold', Georgia, Times, serif;
+  margin: 60px 0 20px;
+}
+#wrap nav p.writing {
+  font: 24px/32px 'ArnhemPro-Regular', Georgia, Times, serif;
+  margin-bottom: 20px;
+}
 #wrap section {
-  padding: 40px;
+  width: 100%;
+  margin: 0 auto;
 }
 #wrap section #intro {
-  width: 320px;
-  margin: 0 auto;
+  width: 35%;
+  margin: 40px auto;
+  position: relative;
+  z-index: 9999;
 }
 #wrap section #intro p {
   font: 20px/28px 'ArnhemPro-NormalItalic', Georgia, Times, serif;
@@ -221,36 +240,225 @@ body {
   right: 3%;
   margin-top: 150px;
 }
-body.blue {
+#wrap section img.profile {
+  display: block;
+  margin: 50px auto 30px;
+  border-radius: 90px;
+  -webkit-border-radius: 90px;
+  -moz-border-radius: 90px;
+}
+#wrap section .item {
+  width: 100%;
+  float: left;
+  font: 22px/29px 'ArnhemPro-Normal', Georgia, Times, serif;
+  margin-bottom: 20px;
+}
+#wrap section .item p {
+  margin-bottom: 15px;
+}
+#wrap section .item .left {
+  width: 48%;
+  text-align: right;
+  float: left;
+  font: 22px/29px 'ArnhemPro-NormalItalic', Georgia, Times, serif;
+}
+#wrap section .item .right {
+  width: 48%;
+  text-align: left;
+  float: right;
+  padding-right: 10%;
+}
+#wrap section img.mark {
+  display: block;
+  margin: 0 auto;
+}
+#wrap section .container {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+#wrap section .container #one,
+#wrap section .container #two,
+#wrap section .container #three {
+  display: block;
+  position: relative;
+  float: left;
+  width: 33.3%;
+  padding: 20px 50px;
+  text-align: center;
+  overflow: hidden;
+}
+#wrap section .container #one span.number,
+#wrap section .container #two span.number,
+#wrap section .container #three span.number {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  text-align: center;
+  margin: 20px auto;
+  border-radius: 20px;
+  padding: 9px;
+}
+#wrap section .container #one h2,
+#wrap section .container #two h2,
+#wrap section .container #three h2 {
+  font: 28px/32px 'ArnhemPro-Bold', Georgia, Times, serif;
+  text-decoration: underline;
+  margin: 60px 0;
+}
+#wrap section .container #one img,
+#wrap section .container #two img,
+#wrap section .container #three img {
+  position: absolute;
+  margin: -40px 0 0 -128px;
+  z-index: 1111;
+}
+#wrap section .container #one h3,
+#wrap section .container #two h3,
+#wrap section .container #three h3 {
+  margin: 50px 0 10px;
+}
+#wrap section .container #one h3 span,
+#wrap section .container #two h3 span,
+#wrap section .container #three h3 span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+#wrap section .container #one p,
+#wrap section .container #two p,
+#wrap section .container #three p {
+  text-align: left;
+  margin: 20px 0;
+}
+#wrap section .container #one span.number,
+#wrap section .container #two span.number,
+#wrap section .container #three span.number,
+#wrap section .container #one h2,
+#wrap section .container #two h2,
+#wrap section .container #three h2,
+#wrap section .container #one h3,
+#wrap section .container #two h3,
+#wrap section .container #three h3,
+#wrap section .container #one p,
+#wrap section .container #two p,
+#wrap section .container #three p {
+  position: relative;
+  z-index: 8888;
+}
+#wrap section .container.reviews {
+  background: #fffef8;
+  text-align: center;
+}
+#wrap section .container.reviews h3 {
+  font: 28px/28px 'ArnhemPro-Bold', Georgia, Times, serif;
+  padding: 50px 0 40px;
+}
+#wrap section .container.reviews .one,
+#wrap section .container.reviews .two,
+#wrap section .container.reviews .three {
+  display: block;
+  margin-bottom: 30px;
+  position: relative;
+  float: left;
+  width: 33.3%;
+  padding: 0 50px;
+  text-align: center;
+}
+#wrap section .container.reviews .one p,
+#wrap section .container.reviews .two p,
+#wrap section .container.reviews .three p {
+  margin: 20px 0 40px;
+}
+#wrap section .container.reviews .one p span,
+#wrap section .container.reviews .two p span,
+#wrap section .container.reviews .three p span {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+#wrap section .container.reviews .one p i,
+#wrap section .container.reviews .two p i,
+#wrap section .container.reviews .three p i {
+  font-family: 'ArnhemPro-NormalItalic', Georgia, Times, serif;
+}
+#wrap section #mark {
+  width: 100%;
+  float: left;
+}
+body.blue,
+#one {
   background: #e3f0f7;
 }
 body.blue a,
+#one a,
 body.blue p,
-body.blue span {
+#one p,
+body.blue span,
+#one span,
+body.blue div,
+#one div,
+body.blue h1,
+#one h1,
+body.blue h2,
+#one h2,
+body.blue h3,
+#one h3 {
   color: #0089cf;
 }
-body.blue #wrap a#logo {
+body.blue #wrap a#logo,
+#one #wrap a#logo {
   background-position: 0 0;
 }
-body.yellow {
+body.yellow,
+#two {
   background: #fffcc9;
 }
 body.yellow a,
+#two a,
 body.yellow p,
-body.yellow span {
-  color: #aba000;
+#two p,
+body.yellow span,
+#two span,
+body.yellow div,
+#two div,
+body.yellow h1,
+#two h1,
+body.yellow h2,
+#two h2,
+body.yellow h3,
+#two h3 {
+  color: #9b8c00;
 }
-body.yellow #wrap a#logo {
+body.yellow #wrap a#logo,
+#two #wrap a#logo {
   background-position: 0 -80px;
 }
-body.green {
+body.green,
+#three {
   background: #e5f3e9;
 }
 body.green a,
+#three a,
 body.green p,
-body.green span {
+#three p,
+body.green span,
+#three span,
+body.green div,
+#three div,
+body.green h1,
+#three h1,
+body.green h2,
+#three h2,
+body.green h3,
+#three h3 {
   color: #0b7039;
 }
-body.green #wrap a#logo {
+body.green #wrap a#logo,
+#three #wrap a#logo {
   background-position: 0 -160px;
 }
