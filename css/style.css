@@ -151,6 +151,8 @@ body {
   background: #fffef8;
   text-align: center;
   padding: 40px;
+  position: relative;
+  z-index: 9999;
 }
 #wrap nav a#logo {
   display: block;
