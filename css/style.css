@@ -134,9 +134,8 @@ ArnhemPro-NormalItalic
 ArnhemPro-BlackItalic
 ArnhemPro-Black
 ArnhemPro-Normal
-
-
 */
+/* Utilities */
 * {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
@@ -180,27 +179,76 @@ body {
 #wrap nav ul li a:hover {
   color: #666;
 }
-#wrap.blue a,
-#wrap.blue p,
-#wrap.blue span {
+#wrap section {
+  padding: 40px;
+}
+#wrap section #intro {
+  width: 320px;
+  margin: 0 auto;
+}
+#wrap section #intro p {
+  font: 20px/28px 'ArnhemPro-NormalItalic', Georgia, Times, serif;
+  margin-bottom: 15px;
+}
+#wrap section #quote {
+  text-align: center;
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  width: 260px;
+}
+#wrap section #quote p {
+  font: 24px/32px 'ArnhemPro-NormalItalic', Georgia, Times, serif;
+  color: #000;
+  opacity: .2;
+}
+#wrap section #quote span {
+  color: #bfbfbf;
+  text-transform: uppercase;
+  font: 13px/21px 'ArnhemPro-Normal', Georgia, Times, serif;
+  letter-spacing: 2px;
+}
+#wrap section img.left {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
+#wrap section img.right {
+  position: absolute;
+  top: 10%;
+  right: 3%;
+  margin-top: 150px;
+}
+body.blue {
+  background: #e3f0f7;
+}
+body.blue a,
+body.blue p,
+body.blue span {
   color: #0089cf;
 }
-#wrap.blue a#logo {
+body.blue #wrap a#logo {
   background-position: 0 0;
 }
-#wrap.yellow a,
-#wrap.yellow p,
-#wrap.yellow span {
+body.yellow {
+  background: #fffcc9;
+}
+body.yellow a,
+body.yellow p,
+body.yellow span {
   color: #aba000;
 }
-#wrap.yellow a#logo {
+body.yellow #wrap a#logo {
   background-position: 0 -80px;
 }
-#wrap.green a,
-#wrap.green p,
-#wrap.green span {
+body.green {
+  background: #e5f3e9;
+}
+body.green a,
+body.green p,
+body.green span {
   color: #0b7039;
 }
-#wrap.green a#logo {
+body.green #wrap a#logo {
   background-position: 0 -160px;
 }
