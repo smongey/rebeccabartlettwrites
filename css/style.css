@@ -286,7 +286,7 @@ a:hover {
   position: relative;
   float: left;
   width: 33.3%;
-  padding: 20px 50px;
+  padding: 20px 50px 120px;
   text-align: center;
   overflow: hidden;
 }
@@ -402,6 +402,9 @@ a:hover {
 #wrap section .container.reviews .two p i,
 #wrap section .container.reviews .three p i {
   font-family: 'ArnhemPro-NormalItalic', Georgia, Times, serif;
+}
+#wrap section .container.reviews #mark {
+  margin-top: -40px;
 }
 #wrap section #mark {
   width: 100%;
