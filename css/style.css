@@ -147,6 +147,7 @@ body {
   margin: 0;
   padding: 0;
   font: 18px/24px 'ArnhemPro-Normal', Georgia, Times, serif;
+  overflow-y: scroll;
 }
 a {
   -webkit-transition: all, ease, 0.2s;
@@ -276,6 +277,7 @@ a:hover {
   float: left;
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 #wrap section .container #one,
 #wrap section .container #two,
@@ -348,6 +350,21 @@ a:hover {
   position: relative;
   z-index: 8888;
 }
+#wrap section .container #one blockquote,
+#wrap section .container #two blockquote,
+#wrap section .container #three blockquote {
+  font: 24px/28px 'ArnhemPro-NormalItalic', Georgia, Times, serif;
+}
+#wrap section .container #one ul,
+#wrap section .container #two ul,
+#wrap section .container #three ul {
+  padding: 10px 0;
+}
+#wrap section .container #one li,
+#wrap section .container #two li,
+#wrap section .container #three li {
+  padding: 5px 0;
+}
 #wrap section .container.reviews {
   background: #fffef8;
   text-align: center;
@@ -388,7 +405,10 @@ a:hover {
 }
 #wrap section #mark {
   width: 100%;
+  position: relative;
   float: left;
+  margin-top: -90px;
+  z-index: 9999;
 }
 body.blue,
 #one {
@@ -407,7 +427,13 @@ body.blue h1,
 body.blue h2,
 #one h2,
 body.blue h3,
-#one h3 {
+#one h3,
+body.blue blockquote,
+#one blockquote,
+body.blue ul,
+#one ul,
+body.blue li,
+#one li {
   color: #0089cf;
 }
 body.blue #wrap a#logo,
@@ -431,7 +457,13 @@ body.yellow h1,
 body.yellow h2,
 #two h2,
 body.yellow h3,
-#two h3 {
+#two h3,
+body.yellow blockquote,
+#two blockquote,
+body.yellow ul,
+#two ul,
+body.yellow li,
+#two li {
   color: #9b8c00;
 }
 body.yellow #wrap a#logo,
@@ -455,7 +487,13 @@ body.green h1,
 body.green h2,
 #three h2,
 body.green h3,
-#three h3 {
+#three h3,
+body.green blockquote,
+#three blockquote,
+body.green ul,
+#three ul,
+body.green li,
+#three li {
   color: #0b7039;
 }
 body.green #wrap a#logo,

@@ -68,7 +68,7 @@ ArnhemPro-Normal
 	transition: @a, @b, @c; }
 
 * { -webkit-font-smoothing: antialiased; box-sizing: border-box; -moz-box-sizing: border-box; }
-body { margin: 0; padding: 0; font: 18px/24px 'ArnhemPro-Normal', Georgia, Times, serif; }
+body { margin: 0; padding: 0; font: 18px/24px 'ArnhemPro-Normal', Georgia, Times, serif; overflow-y:scroll; }
 
 a { .animate(all, ease, .2s); text-decoration: none; }
 a:hover { color:#666 !important; }
@@ -106,7 +106,7 @@ a:hover { color:#666 !important; }
 		}
 		img.mark { display: block; margin:0 auto; } 
 
-		.container { float:left; width: 100%; position: relative;
+		.container { float:left; width: 100%; position: relative; overflow: hidden;
 			#one, #two, #three { display:block; position: relative; float:left; width: 33.3%; padding: 20px 50px; text-align: center; overflow: hidden;
 				span.number { display: block; width: 40px; height:40px; background: #fff; text-align: center; margin:20px auto; border-radius: 20px; padding: 9px; }
 				h2 { font:28px/32px 'ArnhemPro-Bold', Georgia, Times, serif; text-decoration: underline; margin: 60px 0; }
@@ -116,6 +116,9 @@ a:hover { color:#666 !important; }
 				}
 				p { text-align: left; margin:20px 0; }
 				span.number, h2, h3, p { position: relative; z-index: 8888; }
+				blockquote { font:24px/28px 'ArnhemPro-NormalItalic', Georgia, Times, serif; }
+				ul { padding: 10px 0; }
+				li { padding: 5px 0; }
 			}
 		}
 
@@ -134,24 +137,24 @@ a:hover { color:#666 !important; }
 
 		}
 
-		#mark { width:100%; float:left; }
+		#mark { width:100%; position: relative; float:left; margin-top: -90px; z-index: 9999; }
 
 	}
 
 }
 
 body.blue, #one { background:#e3f0f7;
-	a, p, span, div, h1, h2, h3 { color: #0089cf; }
+	a, p, span, div, h1, h2, h3, blockquote, ul, li { color: #0089cf; }
 	#wrap a#logo { background-position: 0 0; }
 }
 
 body.yellow, #two { background:#fffcc9;
-	a, p, span, div, h1, h2, h3 { color: #9b8c00; }
+	a, p, span, div, h1, h2, h3, blockquote, ul, li { color: #9b8c00; }
 	#wrap a#logo { background-position: 0 -80px; }
 }
 
 body.green, #three { background:#e5f3e9;
-	a, p, span, div, h1, h2, h3 { color: #0b7039; }
+	a, p, span, div, h1, h2, h3, blockquote, ul, li { color: #0b7039; }
 	#wrap a#logo { background-position: 0 -160px; }
 }
 
