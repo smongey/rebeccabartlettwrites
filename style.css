@@ -49,7 +49,9 @@ table {
 
 /* A-OK STYLES */
 
-#wrap { background: #f2f2f2; }
+body { background: #f2f2f2; }
+
+#wrap {  }
 
 nav {  }
 
