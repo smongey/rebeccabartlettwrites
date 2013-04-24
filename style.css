@@ -56,6 +56,6 @@ body { margin:0; padding:20px; background: #f2f2f2; font-size: 1.5em; text-align
 #wrap a { text-decoration: none; }
 nav { line-height: 1.5em; }
 
-section {  }
+section { display: block; background:#ff0000; height:30px; }
 
 
