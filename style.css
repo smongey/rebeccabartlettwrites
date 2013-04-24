@@ -49,11 +49,12 @@ table {
 
 /* A-OK STYLES */
 
-body { background: #f2f2f2; }
+* { -webkit-font-smoothing: antaliased; }
+body { margin:0; padding:20px; background: #f2f2f2; font-size: 1.5em; text-align: center; }
 
-#wrap {  }
-
-nav {  }
+#wrap { width:1000px; margin: 0 auto; }
+#wrap a { text-decoration: none; }
+nav { line-height: 1.5em; }
 
 section {  }
 
