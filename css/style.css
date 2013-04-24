@@ -1,0 +1,206 @@
+/* SEAN SCSS STYLES */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* A-OK STYLES 
+
+Type ref:
+ArnhemPro-NormalItalic
+ArnhemPro-BlackItalic
+ArnhemPro-Black
+ArnhemPro-Normal
+
+
+*/
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font: 18px/24px 'ArnhemPro-Normal', Georgia, Times, serif;
+}
+#wrap nav {
+  width: 100%;
+  background: #fffef8;
+  text-align: center;
+  padding: 40px;
+}
+#wrap nav a#logo {
+  display: block;
+  margin: 0 auto;
+  width: 570px;
+  height: 80px;
+  background: #e6e6e6;
+  padding: 30px;
+  margin-bottom: 40px;
+  text-indent: -9999px;
+  background: url('../img/logo.png') 0 0 no-repeat;
+}
+#wrap nav ul li {
+  display: inline-block;
+  text-transform: lowercase;
+  font-size: 20px;
+  padding: 0 6px;
+}
+#wrap nav ul li a {
+  text-decoration: none;
+  -webkit-transition: all, ease, 0.2s;
+  -moz-transition: all, ease, 0.2s;
+  -o-transition: all, ease, 0.2s;
+  transition: all, ease, 0.2s;
+}
+#wrap nav ul li a:hover {
+  color: #666;
+}
+#wrap.blue a,
+#wrap.blue p,
+#wrap.blue span {
+  color: #0089cf;
+}
+#wrap.blue a#logo {
+  background-position: 0 0;
+}
+#wrap.yellow a,
+#wrap.yellow p,
+#wrap.yellow span {
+  color: #aba000;
+}
+#wrap.yellow a#logo {
+  background-position: 0 -80px;
+}
+#wrap.green a,
+#wrap.green p,
+#wrap.green span {
+  color: #0b7039;
+}
+#wrap.green a#logo {
+  background-position: 0 -160px;
+}
