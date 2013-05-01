@@ -365,6 +365,48 @@ a:hover {
 #wrap section .container #three li {
   padding: 5px 0;
 }
+#wrap section .container .post {
+  display: block;
+  position: relative;
+  float: left;
+  width: 50%;
+  padding: 20px 50px 120px;
+  text-align: center;
+  overflow: hidden;
+  min-height: 675px;
+}
+#wrap section .container .post h2 {
+  font: 28px/32px 'ArnhemPro-Bold', Georgia, Times, serif;
+  text-decoration: underline;
+  margin: 30px 0;
+}
+#wrap section .container .post img {
+  max-width: 100%;
+}
+#wrap section .container .post h3 {
+  margin: 50px 0 10px;
+}
+#wrap section .container .post h3 span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+#wrap section .container .post p {
+  text-align: left;
+  margin: 20px 0;
+}
+#wrap section .container .post a {
+  display: block;
+  padding: 5px;
+  background: #fff;
+  width: 115px;
+}
+#wrap section .container .post a:hover {
+  padding: 10px;
+  width: 125px;
+  margin: -5px 0 0 -5px;
+}
 #wrap section .container.reviews {
   background: #fffef8;
   text-align: center;
@@ -414,92 +456,128 @@ a:hover {
   z-index: 9999;
 }
 body.blue,
-#one {
+#one,
+.post:nth-child(1n+1) {
   background: #e3f0f7;
 }
 body.blue a,
 #one a,
+.post:nth-child(1n+1) a,
 body.blue p,
 #one p,
+.post:nth-child(1n+1) p,
 body.blue span,
 #one span,
+.post:nth-child(1n+1) span,
 body.blue div,
 #one div,
+.post:nth-child(1n+1) div,
 body.blue h1,
 #one h1,
+.post:nth-child(1n+1) h1,
 body.blue h2,
 #one h2,
+.post:nth-child(1n+1) h2,
 body.blue h3,
 #one h3,
+.post:nth-child(1n+1) h3,
 body.blue blockquote,
 #one blockquote,
+.post:nth-child(1n+1) blockquote,
 body.blue ul,
 #one ul,
+.post:nth-child(1n+1) ul,
 body.blue li,
-#one li {
+#one li,
+.post:nth-child(1n+1) li {
   color: #0089cf;
 }
 body.blue #wrap a#logo,
-#one #wrap a#logo {
+#one #wrap a#logo,
+.post:nth-child(1n+1) #wrap a#logo {
   background-position: 0 0;
 }
 body.yellow,
-#two {
+#two,
+.post:nth-child(2n+2) {
   background: #fffcc9;
 }
 body.yellow a,
 #two a,
+.post:nth-child(2n+2) a,
 body.yellow p,
 #two p,
+.post:nth-child(2n+2) p,
 body.yellow span,
 #two span,
+.post:nth-child(2n+2) span,
 body.yellow div,
 #two div,
+.post:nth-child(2n+2) div,
 body.yellow h1,
 #two h1,
+.post:nth-child(2n+2) h1,
 body.yellow h2,
 #two h2,
+.post:nth-child(2n+2) h2,
 body.yellow h3,
 #two h3,
+.post:nth-child(2n+2) h3,
 body.yellow blockquote,
 #two blockquote,
+.post:nth-child(2n+2) blockquote,
 body.yellow ul,
 #two ul,
+.post:nth-child(2n+2) ul,
 body.yellow li,
-#two li {
+#two li,
+.post:nth-child(2n+2) li {
   color: #9b8c00;
 }
 body.yellow #wrap a#logo,
-#two #wrap a#logo {
+#two #wrap a#logo,
+.post:nth-child(2n+2) #wrap a#logo {
   background-position: 0 -80px;
 }
 body.green,
-#three {
+#three,
+.post:nth-child(3n+3) {
   background: #e5f3e9;
 }
 body.green a,
 #three a,
+.post:nth-child(3n+3) a,
 body.green p,
 #three p,
+.post:nth-child(3n+3) p,
 body.green span,
 #three span,
+.post:nth-child(3n+3) span,
 body.green div,
 #three div,
+.post:nth-child(3n+3) div,
 body.green h1,
 #three h1,
+.post:nth-child(3n+3) h1,
 body.green h2,
 #three h2,
+.post:nth-child(3n+3) h2,
 body.green h3,
 #three h3,
+.post:nth-child(3n+3) h3,
 body.green blockquote,
 #three blockquote,
+.post:nth-child(3n+3) blockquote,
 body.green ul,
 #three ul,
+.post:nth-child(3n+3) ul,
 body.green li,
-#three li {
+#three li,
+.post:nth-child(3n+3) li {
   color: #0b7039;
 }
 body.green #wrap a#logo,
-#three #wrap a#logo {
+#three #wrap a#logo,
+.post:nth-child(3n+3) #wrap a#logo {
   background-position: 0 -160px;
 }
