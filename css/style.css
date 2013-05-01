@@ -182,7 +182,7 @@ a:hover {
   display: inline-block;
   text-transform: lowercase;
   font-size: 20px;
-  padding: 0 6px;
+  padding: 0 20px;
 }
 #wrap nav ul li a {
   text-decoration: none;
